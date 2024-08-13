@@ -274,6 +274,8 @@ github.com/prometheus/procfs v0.7.3 h1:4jVXhlkAyzOScmCkXBTOLRLTz8EeU+eyjrwB/EPq0
 github.com/prometheus/procfs v0.7.3/go.mod h1:cz+aTbrPOrUb4q7XlbU9ygM+/jj0fzG6c1xBZuNvfVA=
 github.com/rancher/lasso v0.0.0-20221227210133-6ea88ca2fbcc h1:29VHrInLV4qSevvcvhBj5UhQWkPShxrxv4AahYg2Scw=
 github.com/rancher/lasso v0.0.0-20221227210133-6ea88ca2fbcc/go.mod h1:dEfC9eFQigj95lv/JQ8K5e7+qQCacWs1aIA6nLxKzT8=
+github.com/rancher/system-upgrade-controller v0.14.0 h1:iXq28qMM4cOJmrChZcVSCxc1eSKUNzkOXGZx0cR14XI=
+github.com/rancher/system-upgrade-controller v0.14.0/go.mod h1:3wN1mMe8ec+NWPJZrb6fTXfKlQZKX6YFIbPrBIJB4jk=
 github.com/rancher/wrangler v1.1.1-0.20230425173236-39a4707f0689 h1:otb4OjgXH2b8a4C9g76jCDuTF3opjaYffZ55SiVe7KU=
 github.com/rancher/wrangler v1.1.1-0.20230425173236-39a4707f0689/go.mod h1:D6Tu6oVX8aGtCHsMCtYaysgVK3ad920MTSeAu7rzb5U=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=

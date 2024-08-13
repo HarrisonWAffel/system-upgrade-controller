@@ -1,4 +1,4 @@
-module github.com/rancher/system-upgrade-controller
+module github.com/harrisonwaffel/system-upgrade-controller
 
 go 1.20
 
@@ -7,6 +7,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.9.4
 	github.com/onsi/gomega v1.27.6
 	github.com/rancher/lasso v0.0.0-20221227210133-6ea88ca2fbcc
+	github.com/rancher/system-upgrade-controller v0.14.0
 	github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0
 	github.com/rancher/wrangler v1.1.1-0.20230425173236-39a4707f0689
 	github.com/sirupsen/logrus v1.9.0
