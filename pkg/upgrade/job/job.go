@@ -256,6 +256,10 @@ func New(plan *upgradeapiv1.Plan, node *corev1.Node, controllerName string) *bat
 		}}
 	}
 
+	if plan.Spec.HostNetwork {
+		job.Spec.Template.Spec.HostNetwork = true
+	}
+
 	podTemplate := &job.Spec.Template
 	// setup secrets volumes
 	for _, secret := range plan.Spec.Secrets {

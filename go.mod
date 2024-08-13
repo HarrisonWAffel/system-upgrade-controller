@@ -20,6 +20,20 @@ require (
 	k8s.io/utils v0.0.0-20221107191617-1a15be271d1d
 )
 
+replace (
+	k8s.io/cloud-provider => k8s.io/cloud-provider v1.25.12
+	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v1.25.12
+	k8s.io/controller-manager => k8s.io/controller-manager v1.25.12
+	k8s.io/cri-api => k8s.io/cri-api v1.25.12
+	k8s.io/csi-translation-lib => k8s.io/csi-translation-lib v1.25.12
+	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v1.25.12
+	k8s.io/kube-proxy => k8s.io/kube-proxy v1.25.12
+	k8s.io/kube-scheduler => k8s.io/kube-scheduler v1.25.12
+	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v1.25.12
+	k8s.io/mount-utils => k8s.io/mount-utils v1.25.12
+	k8s.io/sample-apiserver => k8s.io/sample-apiserver v1.25.12
+)
+
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
