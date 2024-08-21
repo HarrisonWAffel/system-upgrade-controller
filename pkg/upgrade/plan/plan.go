@@ -103,7 +103,18 @@ func addToHashFromAnnotation(h stdhash.Hash, plan *upgradeapiv1.Plan) error {
 	}
 
 	for _, entry := range strings.Split(plan.Annotations[upgradeapi.AnnotationIncludeInDigest], ",") {
-		h.Write([]byte(dataMap.String(strings.Split(entry, ".")...)))
+		// take the string value of all entries that match the given include annotation
+		// and sort the individual characters returned by fmt.Sprintf. This results
+		// in a consistent hash regardless of ordering. The actual value of
+		// string(cs) is not used.
+		var cs []rune
+		for _, e := range dataMap.StringSlice(strings.Split(entry, ".")...) {
+			cs = append(cs, []rune(fmt.Sprintf("%v", e))...)
+		}
+		sort.SliceStable(cs, func(i, j int) bool {
+			return cs[i] > cs[j]
+		})
+		h.Write([]byte(string(cs)))
 	}
 
 	return nil
